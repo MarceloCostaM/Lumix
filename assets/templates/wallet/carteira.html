@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <h2 class="text-center mb-4">wallet</h2>
+            <form>
+                <div class="mb-3 mt-4">
+                    <label for="username" class="form-label">Wallet ID</label>
+                    <input type="text" class="form-control" id="wallet-id" placeholder="Digite o Id de sua wallet">
+                </div>
+                <div class="mb-3 mt-4">
+                    <label for="quantity" class="form-label">Quantidade de Token</label>
+                    <input type="number" class="form-control" id="quantity-token" placeholder="Digite a quantidade de tokens que deseja">
+                </div>
+                <button type="submit" class="btn-reg" id="botaoregistrar">Mintar</button>
+            </form>
+
+            
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/mintToken.js') }}">
+</script>

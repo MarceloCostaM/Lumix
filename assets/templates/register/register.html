@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Di-Company Casino Experience</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css2.css') }}"> 
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Registro</h2>
+                <form>
+                    <div class="mb-3 mt-4">
+                        <label for="username" class="form-label">Nome de usuário</label>
+                        <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
+                    </div>
+                    <div class="mb-3 mt-4">
+                        <label for="email" class="form-label">Endereço de e-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    <div class="mb-3 mt-4">
+                        <label for="password" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                    </div>
+                    <div class="mb-3 form-check mt-4">
+                        <input type="checkbox" class="form-check-input" id="terms">
+                        <label class="form-check-label" for="terms">Aceitar os termos e condições</label>
+                    </div>
+                    <button type="submit" class="btn-reg" id="botaoregistrar">Registrar</button>
+                </form>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/createWallet.js') }}">
+    </script>
+
+
+</body>
+</html>
